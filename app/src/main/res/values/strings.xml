@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">Eat_What_Android</string>
+    <string name="app_name">呷蝦米</string>
+    <string name="mainOption_lottery">我今天不想思考</string>
+    <string name="mainOption_selectTags">我今天很龜毛</string>
+    <string name="mainOption_addFoodList">增加美食清單</string>
+    <string name="mainOption_viewAllTags">查看標籤</string>
+    <string name="mainOption_viewAllFoods">查看美食</string>
+
+    <!--addFoodCard String-->
+    <string name="addFoodCard_foodName">食物名稱</string>
+    <string name="addFoodCard_foodPrice">食物價格</string>
+    <string name="addFoodCard_storeInfo">店家資訊</string>
+    <string name="addFoodCard_foodPhoto">食物圖像</string>
+    <string name="addFoodCard_foodTags">食物標籤</string>
+    <string name="addFoodCard_errorMsg_lackOfInput">缺少必填資訊</string>
+    <string name="addFoodCard_placeHolder_foodName">輸入食物名稱</string>
+
+    <!--button String-->
+    <string name="btn_add">新增</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_addFoodCard_upload">點我上傳</string>
 </resources>

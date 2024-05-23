@@ -16,15 +16,17 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    surface = BGColor,
+    background = BGColor,
+    primary = PrimaryColor,
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    surface = BGColor,
+    background = BGColor,
+    primary = PrimaryColor,
+//    secondary = PurpleGrey40,
+//    tertiary = Pink40
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -41,7 +43,7 @@ private val LightColorScheme = lightColorScheme(
 fun Eat_What_AndroidTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,//close this set could prevent system override developer setting
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

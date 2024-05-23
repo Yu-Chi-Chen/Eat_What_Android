@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Eat What</string>
+    <string name="mainOption_lottery">Random Select</string>
+    <string name="mainOption_selectTags">Tags Select</string>
+    <string name="mainOption_addFoodList">FoodCard Add</string>
+    <string name="mainOption_viewAllTags">View Tags</string>
+    <string name="mainOption_viewAllFoods">FoodList</string>
+    <string name="addFoodCard_foodName">Food Name</string>
+    <string name="addFoodCard_foodPrice">Food Price</string>
+    <string name="addFoodCard_storeInfo">Store Information</string>
+    <string name="addFoodCard_foodPhoto">Food Photo</string>
+    <string name="addFoodCard_foodTags">Tags</string>
+    <string name="addFoodCard_errorMsg_lackOfInput">Lack of Required Information</string>
+    <string name="addFoodCard_placeHolder_foodName">Input Food Name</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_addFoodCard_upload">Upload Photo</string>
+</resources>
