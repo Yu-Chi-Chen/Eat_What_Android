@@ -21,7 +21,7 @@ fun NormalButton(
     action:() -> Unit,
     modifier: Modifier = Modifier
         .fillMaxWidth()
-        .height(50.dp)
+        .height(55.dp)
 ){
     Button(
         shape = RoundedCornerShape(10.dp),

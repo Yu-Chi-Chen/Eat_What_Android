@@ -2,6 +2,7 @@ package com.polarisyu.eat_what_android.ui.common
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -17,7 +18,7 @@ import com.polarisyu.eat_what_android.R
 fun PrimaryButton(
     text: String,
     action:() -> Unit,
-    modifier:Modifier=Modifier.fillMaxWidth().height(50.dp)
+    modifier:Modifier=Modifier.fillMaxWidth().height(55.dp)
 ){
     Button(
         shape = RoundedCornerShape(10.dp),
