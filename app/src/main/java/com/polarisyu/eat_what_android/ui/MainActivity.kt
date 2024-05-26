@@ -9,10 +9,12 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.polarisyu.eat_what_android.ui.addfoodcard.AddFoodCard
+import com.polarisyu.eat_what_android.ui.addfoodcard.AddFoodCardViewModel
 import com.polarisyu.eat_what_android.ui.home.HomePage
 import com.polarisyu.eat_what_android.ui.theme.Eat_What_AndroidTheme
 
@@ -37,14 +39,17 @@ class MainActivity : ComponentActivity() {
 fun App() {
     val navController=rememberNavController()
     NavHost(navController = navController, startDestination = "home") {
-        composable("home"){
+        composable("Home"){
             HomePage (onNavigate = { route ->
                 navController.navigate(route)
             })
         }
         composable("RandomChoose"){ RandomChooseScreen()}
         composable("SelectByTags"){ SelectByTagsScreen()}
-        composable("AddFoodList"){ FoodListAddPage()}
+        composable("AddFoodList"){
+            val viewModel = ViewModelProvider(it).get(AddFoodCardViewModel::class.java)
+            AddFoodCard(viewModel = viewModel,navController = navController)
+        }
         composable("ViewAllTags"){ TagsPage()}
         composable("ViewAllFoodCards"){ FoodCardListPage()}
     }
@@ -69,13 +74,6 @@ fun SelectByTagsScreen(){
     //RandomChoose
 }
 
-@Composable
-fun FoodListAddPage() {
-    // FoodListAddPage
-    AddFoodCard {
-
-    }
-}
 
 @Composable
 fun TagsPage(){
