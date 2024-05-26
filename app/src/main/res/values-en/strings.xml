@@ -15,5 +15,11 @@
     <string name="addFoodCard_placeHolder_foodName">Input Food Name</string>
     <string name="btn_add">Add</string>
     <string name="btn_back">Back</string>
+    <string name="btn_edit">Edit</string>
     <string name="btn_addFoodCard_upload">Upload Photo</string>
+    <string name="tagsList_title">All Tags</string>
+    <string name="btn_sure">Sure</string>
+    <string name="btn_goToAdd">Go To Add</string>
+    <string name="errMsg_lackOfTagTitle">No Tag</string>
+    <string name="errMsg_lackOfTagText">You should add first tag for adding first Food Card!</string>
 </resources>

@@ -15,8 +15,19 @@
     <string name="addFoodCard_errorMsg_lackOfInput">缺少必填資訊</string>
     <string name="addFoodCard_placeHolder_foodName">輸入食物名稱</string>
 
+    <!--tagsList String-->
+    <string name="tagsList_title">所有標籤</string>
+
     <!--button String-->
     <string name="btn_add">新增</string>
     <string name="btn_back">返回</string>
+    <string name="btn_edit">編輯</string>
+    <string name="btn_sure">確定</string>
     <string name="btn_addFoodCard_upload">點我上傳</string>
+    <string name="btn_goToAdd">前往新增</string>
+
+    <!--errorMsg String-->
+    <string name="errMsg_lackOfTagTitle">尚未新增標籤</string>
+    <string name="errMsg_lackOfTagText">當前尚未新增標籤，點擊前往新增</string>
+
 </resources>
