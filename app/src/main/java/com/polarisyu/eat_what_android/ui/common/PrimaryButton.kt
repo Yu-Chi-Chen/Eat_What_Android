@@ -17,7 +17,7 @@ import com.polarisyu.eat_what_android.R
 @Composable
 fun PrimaryButton(
     text: String,
-    action:() -> Unit,
+    action: () -> Unit,
     modifier:Modifier=Modifier.fillMaxWidth().height(55.dp)
 ){
     Button(

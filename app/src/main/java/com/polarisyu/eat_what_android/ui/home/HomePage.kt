@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -43,8 +42,20 @@ fun HomePage(onNavigate: (String) -> Unit){
 
                 Spacer(modifier=Modifier.height(8.dp))
                 Row {
-                    NormalButton(text = stringResource(id = R.string.mainOption_viewAllTags), action = { onNavigate("ViewAllTags")},modifier=Modifier.weight(1f).padding(end = 4.dp).height(50.dp))
-                    NormalButton(text = stringResource(id = R.string.mainOption_viewAllFoods), action = { onNavigate("ViewAllFoodCards")},modifier = Modifier.weight(1f).padding(start = 4.dp).height(50.dp))
+                    NormalButton(
+                        text = stringResource(id = R.string.mainOption_viewAllTags),
+                        modifier=Modifier
+                            .weight(1f)
+                            .padding(end = 4.dp)
+                            .height(50.dp),
+                        action = { onNavigate("ViewAllTags")})
+                    NormalButton(
+                        text = stringResource(id = R.string.mainOption_viewAllFoods),
+                        modifier = Modifier
+                            .weight(1f)
+                            .padding(start = 4.dp)
+                            .height(50.dp),
+                        action = { onNavigate("ViewAllFoodCards")})
                 }
                 Spacer(modifier=Modifier.weight(1f))
 

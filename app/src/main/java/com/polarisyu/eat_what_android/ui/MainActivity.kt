@@ -16,6 +16,8 @@ import androidx.navigation.compose.rememberNavController
 import com.polarisyu.eat_what_android.ui.addfoodcard.AddFoodCard
 import com.polarisyu.eat_what_android.ui.addfoodcard.AddFoodCardViewModel
 import com.polarisyu.eat_what_android.ui.home.HomePage
+import com.polarisyu.eat_what_android.ui.taglist.TagsList
+import com.polarisyu.eat_what_android.ui.taglist.TagsListViewModel
 import com.polarisyu.eat_what_android.ui.theme.Eat_What_AndroidTheme
 
 class MainActivity : ComponentActivity() {
@@ -50,7 +52,10 @@ fun App() {
             val viewModel = ViewModelProvider(it).get(AddFoodCardViewModel::class.java)
             AddFoodCard(viewModel = viewModel,navController = navController)
         }
-        composable("ViewAllTags"){ TagsPage()}
+        composable("ViewAllTags"){
+            val viewModel = ViewModelProvider(it).get(TagsListViewModel::class.java)
+            TagsList(viewModel = viewModel,navController = navController)
+        }
         composable("ViewAllFoodCards"){ FoodCardListPage()}
     }
 

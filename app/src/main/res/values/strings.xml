@@ -17,12 +17,17 @@
 
     <!--tagsList String-->
     <string name="tagsList_title">所有標籤</string>
+    <string name="tagsList_popUp_addTitle">新增標籤</string>
+    <string name="tagsList_popUp_editTitle">編輯標籤</string>
+    <string name="tagsList_popUp_addDescription">增加一個新的標籤</string>
+    <string name="tagsList_popUp_editDescription">修改標籤成....</string>
 
     <!--button String-->
     <string name="btn_add">新增</string>
     <string name="btn_back">返回</string>
     <string name="btn_edit">編輯</string>
     <string name="btn_sure">確定</string>
+    <string name="btn_cancel">取消</string>
     <string name="btn_addFoodCard_upload">點我上傳</string>
     <string name="btn_goToAdd">前往新增</string>
 

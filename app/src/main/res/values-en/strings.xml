@@ -13,6 +13,7 @@
     <string name="addFoodCard_foodTags">Tags</string>
     <string name="addFoodCard_errorMsg_lackOfInput">Lack of Required Information</string>
     <string name="addFoodCard_placeHolder_foodName">Input Food Name</string>
+    <string name="tagsList_popUp_editDescription">Modify your tag to be....</string>
     <string name="btn_add">Add</string>
     <string name="btn_back">Back</string>
     <string name="btn_edit">Edit</string>
@@ -22,4 +23,8 @@
     <string name="btn_goToAdd">Go To Add</string>
     <string name="errMsg_lackOfTagTitle">No Tag</string>
     <string name="errMsg_lackOfTagText">You should add first tag for adding first Food Card!</string>
+    <string name="tagsList_popUp_addTitle">Add New Tag</string>
+    <string name="tagsList_popUp_editTitle">Modify Existed Tag</string>
+    <string name="tagsList_popUp_addDescription">"Please type your new tag name "</string>
+    <string name="btn_cancel">Cancel</string>
 </resources>

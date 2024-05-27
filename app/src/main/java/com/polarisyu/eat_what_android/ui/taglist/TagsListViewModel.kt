@@ -13,9 +13,15 @@ import kotlinx.coroutines.launch
 
 class TagsListViewModel(): ViewModel() {
     private val tagsRepository = TagsRepository()
+    private val _showDialog = MutableStateFlow(false)
+    val showDialog: StateFlow<Boolean> = _showDialog.asStateFlow()
     val tags = tagsRepository.fetchTags().stateIn(viewModelScope, SharingStarted.Lazily, emptyList())
     private val _selectedTag = MutableStateFlow<Tag?>(null)
     val selectedTag: StateFlow<Tag?> = _selectedTag.asStateFlow()
+
+    fun toggleDialog(show: Boolean) {
+        _showDialog.value = show
+    }
 
     fun selectTag(tagId: String) {
         if (_selectedTag.value?.id != tagId) {
